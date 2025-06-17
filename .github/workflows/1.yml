@@ -43,8 +43,6 @@ jobs:
       - name: установит зависимости
         run: pip install -r requirements.txt
 
-      - name: Линтинг
-
       - name: Тесты
         run: python manage test
         env:
