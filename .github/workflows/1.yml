@@ -44,7 +44,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Тесты
-        run: python manage test
+        run: python manage.py test
         env:
           SECRET_KEY: ${{ env.SECRET_KEY }}
           DEBUG: ${{ env.DEBUG }}
